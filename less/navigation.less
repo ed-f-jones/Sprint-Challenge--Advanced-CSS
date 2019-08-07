@@ -1,1 +1,25 @@
 // Navigation code here
+.navigation{
+    margin: auto;
+    .width();
+    color: @header-font-color;
+    text-align: center;
+    @media @phone{
+        .displayflex();
+    }
+    a{
+        margin: 10px;
+        font-size: 2rem;
+        text-decoration: none;
+        &:hover{
+            background-color:@nav-bg;
+            color: @nav-font;
+            border:1px;
+            border-color: @nav-border;
+        }
+    }
+    h1{
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+}

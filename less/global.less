@@ -31,8 +31,13 @@ p {
 }
 
 .container {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;  
+  .width();
+  margin: 0 auto;
+  @media @phone{
+    .displayflex();
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+  }  
 }
 
